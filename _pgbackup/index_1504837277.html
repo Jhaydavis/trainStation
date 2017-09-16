@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jhay Davis is a fortune 500 leader with 15 years experience in both technical IT development as well as marketing planning and strategy.">
+        <meta name="keywords" content="Jhay Davis,CTO,Full Stack, MERN Stack, App Development, Dallas TX, jQuery, Javascript, Node.js, Java, MySQL, MongoDB">
+        <meta name="author" content="Jhay Davis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jhay's Train Schedule</title>
+        <!--css style sheet link-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container" style="max-width: 800">
+            <div class="jumbotron" style="width: 820;max-width: 820">
+                <h1>Jhay's Train Schedule</h1>
+                <p>Why fly when you can take forever to get there on the train!</p>
+            </div>
+            <div class="panel panel-primary"> 
+                <div class="panel-body">
+                <table width="100%" border="1" cellspacing="5" cellpadding="5" class="table-striped">
+                    <caption>
+                        <h3>Today's Schedule</h3>
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <th scope="col">TRAIN NAME</th>
+                            <th scope="col">DESTINATION</th>
+                            <th scope="col">FREQUENCY</th>
+                            <th scope="col">NEXT ARRIVAL</th>
+                            <th scope="col">MINS AWAY</th>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>                 
+            </div>
+            <!--table with data base schedule-->
+            <hr>
+            <div class="panel panel-primary">
+                <div class="panel-heading">Schedule Admin Section</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">Train Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="enter train name">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">Destination</label>
+                        <input type="text" class="form-control" id="train-destination" placeholder="enter destination">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">First Train Time</label>
+                        <input type="text" class="form-control" id="train-firstTime" placeholder="enter first train time today">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">Frequency</label>
+                        <input type="text" class="form-control" id="train-frequency" placeholder="enter frequency">
+                    </div>
+                    <button type="button" class="btn btn-success">Submit Schedule Change </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

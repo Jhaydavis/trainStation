@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Jhay Davis is a fortune 500 leader with 15 years experience in both technical IT development as well as marketing planning and strategy.">
+        <meta name="keywords" content="Jhay Davis,CTO,Full Stack, MERN Stack, App Development, Dallas TX, jQuery, Javascript, Node.js, Java, MySQL, MongoDB">
+        <meta name="author" content="Jhay Davis">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jhay's Space Travel Schedule</title>
+        <!--css style sheet link-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <!--script files-->
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-attachment: fixed;color: #ffffff;background-image:url('assets/images/bg-ship.jpg');background-position: left top;background-size: cover;">
+        <div class="container" style="max-width: 800">
+            <div class="jumbotron" style="width: 820;max-width: 820;background-color: rgba(45, 46, 49, 0.36)">
+                <h1>Intergalactic Spaceport Schedule</h1>
+                <p>Hyper-travel with us! See your Uranus up close! </p>
+            </div>
+            <div class="panel panel-primary" style="border-top: 1px solid #11b6f4;border-bottom: 1px solid;border-left: 1px solid;border-right: 1px solid #000000;border-radius: 20px">
+                <div class="panel-body" style="background-color: rgba(61, 78, 112, 0.74);border-top-left-radius: 0;border-top: 0 solid #f20b0b">
+                    <table width="100%" border="1" cellspacing="10" cellpadding="10" class="table-striped">
+                        <caption style="background-color: rgba(234, 238, 242, 0.36)">
+                            <h3 style="color: #042139" class="text-center">Today's Intergalactic Schedule</h3>
+                            <p id="current-time"></p>
+                        </caption>
+                        <tbody id="schedule">
+                            <tr>
+                                <th scope="col">VESSEL NAME</th>
+                                <th scope="col">DESTINATION</th>
+                                <th scope="col">FREQUENCY</th>
+                                <th scope="col">NEXT ARRIVAL</th>
+                                <th scope="col">UNIX TIME AWAY</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--table with data base schedule-->
+            <hr>
+            <div class="panel panel-primary">
+                <div class="panel-heading">Galactic Scheduler Admin Section</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">Vessel Name</label>
+                        <input type="text" class="form-control" id="train-name" placeholder="enter vessel name">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">Destination</label>
+                        <input type="text" class="form-control" id="train-destination" placeholder="enter destination">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">First Departure Time</label>
+                        <input type="text" class="form-control" id="train-firstTime" placeholder="enter first departure time today">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="formInput1001">Frequency</label>
+                        <input type="text" class="form-control" id="train-frequency" placeholder="enter frequency">
+                    </div>
+                    <button type="button" id="submit-schedule" class="btn btn-success">Submit Schedule Change </button>
+                </div>
+            </div>
+        </div>
+        <!--script files-->
+        <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="assets/js/train.js"></script>
+    </body>
+</html>
